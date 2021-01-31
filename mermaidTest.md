@@ -1,3 +1,11 @@
-···
-1graph TD2A[Android Handler] -->B(Handler)3B -->C[Message]4B -->D[Message Queue]5C -->E{是否有Looper}6E -->|是|F[子线程Looper]7E -->|否|G[主线程Looper]8F -->END(结束)9G -->END(结束)
-···
+```mermaid
+graph TD
+A[Android Handler] -->B(Handler)
+B -->C[Message]
+B -->D[Message Queue]
+C -->E{是否有Looper}
+E -->|是|F[子线程Looper]
+E -->|否|G[主线程Looper]
+F -->END(结束)
+G -->END(结束)
+```
